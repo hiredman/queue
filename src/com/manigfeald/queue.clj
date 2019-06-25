@@ -30,7 +30,7 @@
               (.compareAndSet tail tail-value node)
               (recur))
             (do
-              (.compareAndSet tail tail-value node)
+              (.compareAndSet tail tail-value nxt-value)
               (recur)))
           (recur))))))
 
