@@ -8,7 +8,7 @@
 (deftest test-enqueue
   (enqueue (queue) 5))
 
-(deftest test-deequeue
+(deftest test-dequeue
   (let [q (queue)]
     (enqueue q 5)
     (is (= 5 (dequeue q)))))
