@@ -1,4 +1,4 @@
-(defproject com.manigfeald/queue "0.2.0-SNAPSHOT"
+(defproject com.manigfeald/queue "0.2.0"
   :description "a small concurrent queue"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
