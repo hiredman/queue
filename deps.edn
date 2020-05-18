@@ -1,2 +1,7 @@
 {:deps {org.clojure/clojure {:mvn/version "1.9.0"}}
- :paths ["src"]}
+ :paths ["src"]
+ 
+ :aliases {:jar {:extra-deps {seancorfield/depstar {:mvn/version "1.0.94"}}
+                 :main-opts ["-m" "hf.depstar.jar" "queue.jar"]}
+           :deploy {:extra-deps {deps-deploy {:mvn/version "0.0.9"}}
+                    :main-opts ["-m" "deps-deploy.deps-deploy" "deploy" "queue.jar"]}}}
