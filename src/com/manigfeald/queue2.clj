@@ -8,6 +8,10 @@
 ;; https://www.cs.rochester.edu/research/synchronization/pseudocode/queues.html
 ;; https://www.cs.rochester.edu/u/scott/papers/1996_PODC_queues.pdf
 
+;; http://manticore.cs.uchicago.edu/papers/icfp09-parallel-cml.pdf
+;; discusses using queues protected by spin locks with two "less
+;; common" options "dequeueMatch" and "undequeue"
+
 (set! *warn-on-reflection* true)
 
 (defn queue []
